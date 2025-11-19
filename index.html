@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+            <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <h1>Hello, I'm <span>Your Name</span></h1>
+        <p>I'm a <span id="typed"></span></p>
+    </section>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            Welcome to my portfolio website. I am a passionate web developer with experience in creating responsive and interactive web applications.
+        </p>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project One</h3>
+                <p>Short description of your project.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project Two</h3>
+                <p>Short description of your project.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project Three</h3>
+                <p>Short description of your project.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project Four</h3>
+                <p>Short description of your project.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        &copy; 2025 Your Name. All rights reserved.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
