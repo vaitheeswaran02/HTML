@@ -23,6 +23,8 @@ function type() {
         setTimeout(erase, newTextDelay);
     }
 }
+
+
 function erase() {
     if(letterIndex > 0){
         typedSpan.textContent = typedTexts[textIndex].substring(0, letterIndex - 1);
@@ -33,6 +35,7 @@ function erase() {
         setTimeout(type, typingDelay + 400);
     }
 }
+
 document.addEventListener("DOMContentLoaded", () => {
     if(typedTexts.length) setTimeout(type, 800);
 });
@@ -44,5 +47,6 @@ if(contactForm){
         e.preventDefault();
         alert("Thank you for your message!");
         contactForm.reset();
+
     });
 }
